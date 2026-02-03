@@ -25,3 +25,5 @@ class SiteSettings(models.Model):
 
     def __str__(self):
         return self.site_name
+    
+    

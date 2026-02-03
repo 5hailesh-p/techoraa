@@ -65,7 +65,7 @@ TEMPLATES = [
                 'django.contrib.messages.context_processors.messages',
 
                 # manually added
-                
+                "core.context_processors.site_settings"
             ],
         },
     },

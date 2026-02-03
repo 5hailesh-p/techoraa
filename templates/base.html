@@ -3,7 +3,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>{% block title %}{% endblock title %}</title>
+    {% comment %} <title>{% block title %}{% endblock title %}</title> {% endcomment %}
+    <title>{{site_settings.site_name}}</title>
     <!-- Stylesheets -->
     <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" />
     <link href="{% static 'css/style.css' %}" rel="stylesheet" />
@@ -17,8 +18,8 @@
     <!-- Color Switcher Mockup -->
     <link href="{% static 'css/color-switcher-design.css' %}" rel="stylesheet" />
 
-    <link rel="shortcut icon" href="{% static 'images/logo.png' %}" type="image/x-icon" />
-    <link rel="icon" href="{% static 'images/logo.png' %}" type="image/x-icon" />
+    <link rel="shortcut icon" href="{{site_settings.logo.url}}" type="image/x-icon" />
+    <link rel="icon" href="{{site_settings.logo.url}}" type="image/x-icon" />
 
     <!-- Responsive -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -66,7 +67,7 @@
               <div class="d-flex justify-content-between align-items-center flex-wrap">
                 <div class="logo-box">
                   <div class="logo">
-                    <a href="/"><img src="{% static 'images/logo.png' %}" class="img-fluid" style="width: 5rem;" alt="" title="logo" /></a>
+                    <a href="/"><img src="{{site_settings.logo.url}}" class="img-fluid" style="width: 5rem;" alt="" title="logo" /></a>
                   </div>
                 </div>
 
@@ -170,7 +171,7 @@
                   <div class="footer-three_column col-lg-6 col-md-6 col-sm-12">
                     <div class="footer-three_widget logo-widget">
                       <div class="footer-three_logo">
-                        <a href="/"><img src="{% static 'images/logo.png' %}" alt="" title="" /></a>
+                        <a href="/"><img src="{{site_settings.logo.url}}" style="width: 7rem;" alt="" title="" /></a>
                       </div>
                       <div class="footer-three_text">We work with a passion of taking challenges and creating new ones in advertising sector.</div>
                       <div class="footer-three_location-title">Location</div>
