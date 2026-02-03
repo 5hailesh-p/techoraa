@@ -1025,7 +1025,7 @@
     width: 30px;
     height: 90px;
     z-index: 1;
-    background: url(../images/icons/curve.html);
+    /* background: url(../images/icons/curve.html); */
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -1178,7 +1178,7 @@
 	top:25px;
 	width:76px;
 	height:72px;
-	background: url(../images/icons/award-vector.html) no-repeat;
+	/* background: url(../images/icons/award-vector.html) no-repeat; */
 }
 
 .step-award_count{
@@ -1475,7 +1475,7 @@
 	top:0px;
 	width:126px;
 	height:126px;
-	background: url(../images/icons/vector-1.html);
+	/* background: url(../images/icons/vector-1.html); */
 }
 
 .testimonial-one_carousel-content:after{
@@ -1485,7 +1485,7 @@
 	bottom:0px;
 	width:199px;
 	height:125px;
-	background: url(../images/icons/vector-2.html);
+	/* background: url(../images/icons/vector-2.html); */
 }
 
 .testimonial-one_carousel-layer{
@@ -1494,7 +1494,7 @@
 	top:0px;
 	width:389px;
 	height:238px;
-	background: url(../images/icons/vector-2.html);
+	/* background: url(../images/icons/vector-2.html); */
 }
 
 .testimonial-one_carousel-content .swiper-container{
@@ -2160,7 +2160,7 @@
     width: 60px;
     z-index: 1;
     height: 38px;
-    background: url(../images/icons/shape-3.html);
+    /* background: url(../images/icons/shape-3.html); */
     background-position: right top;
 }
 
@@ -2172,7 +2172,7 @@
 	width:60px;
 	height:38px;
 	z-index:1;
-	background:url(../images/icons/shape-4.html);
+	/* background:url(../images/icons/shape-4.html); */
 }
 
 .news-block_one-meta{
@@ -2187,7 +2187,7 @@
 	top: -30px;
 	width:410px;
 	height:106px;
-	background:url(../images/icons/news-one_arrows.html);
+	/* background:url(../images/icons/news-one_arrows.html); */
 }
 
 .news-block_one-meta li{
@@ -2489,7 +2489,7 @@
 	right:0px;
 	bottom:0px;
 	z-index:1;
-	background: url(../images/main-slider/slider-two_arrow.html) no-repeat;
+	/* background: url(../images/main-slider/slider-two_arrow.html) no-repeat; */
 }
 
 .slider-two_touch span{
@@ -2649,7 +2649,7 @@
 	width:162px;
 	height:151px;
 	z-index:1;
-	background: url(../images/icons/vector-4.html);
+	/* background: url(../images/icons/vector-4.html); */
 }
 
 .about-two_video{
@@ -2966,7 +2966,7 @@
 	-webkit-transition:all 500ms ease;
 	-ms-transition:all 500ms ease;
 	-o-transition:all 500ms ease;
-	background: url(../images/icons/vector-5.html);
+	/* background: url(../images/icons/vector-5.html); */
 }
 
 .service-block_one-icon{
@@ -3849,7 +3849,7 @@
 	top:0px;
 	width:30px;
 	height:30px;
-	background: url(../images/icons/check.html);
+	/* background: url(../images/icons/check.html); */
 }
 
 .price-block_one-list li:last-child{
@@ -4857,7 +4857,7 @@
     top: -162px;
     bottom: -120px;
     width: 200%;
-    background: url(../images/background/video-shape.html);
+    /* background: url(../images/background/video-shape.html); */
     background-position: right top;
     background-repeat: no-repeat;
 }
@@ -5075,7 +5075,7 @@
 	bottom:0px;
 	width:12px;
 	height:317px;
-	background: url(../images/icons/testimonial-two_devider.html) no-repeat;
+	/* background: url(../images/icons/testimonial-two_devider.html) no-repeat; */
 }
 
 .testimonial-two_carousel-outer:after{
@@ -5086,7 +5086,7 @@
 	width:234px;
 	height:80px;
 	transform:translateX(-50%);
-	background: url(../images/background/pattern-24.html) no-repeat;
+	/* background: url(../images/background/pattern-24.html) no-repeat; */
 }
 
 /* Arrows */
@@ -5253,7 +5253,7 @@
     top: -55px;
 	width:227px;
 	height:484px;
-	background: url(../images/background/arrow.html) no-repeat;
+	/* background: url(../images/background/arrow.html) no-repeat; */
 }
 
 .team-two_border-layer{
@@ -6114,7 +6114,7 @@
 	top:-3px;
 	width:32px;
 	height:32px;
-	background: url(../images/icons/check-1.html);
+	/* background: url(../images/icons/check-1.html); */
 }
 
 .project-detail_gallery{
@@ -6743,7 +6743,7 @@
 	top:5px;
 	width:26px;
 	height:26px;
-	background: url(../images/icons/service-arrow-2.html);
+	/* background: url(../images/icons/service-arrow-2.html); */
 }
 
 .service-detail_list-two{
@@ -7333,7 +7333,7 @@
     width: 60px;
     z-index: 1;
     height: 38px;
-    background: url(../images/icons/shape-3.html);
+    /* background: url(../images/icons/shape-3.html); */
     background-position: right top;
 }
 
@@ -7345,7 +7345,7 @@
 	width:60px;
 	height:38px;
 	z-index:1;
-	background:url(../images/icons/shape-4.html);
+	/* background:url(../images/icons/shape-4.html); */
 }
 
 .news-block_three-meta{
@@ -7359,7 +7359,7 @@
 	top: -50px;
 	right:0px;
 	height:266px;
-	background:url(../images/icons/news-three_arrows.html);
+	/* background:url(../images/icons/news-three_arrows.html); */
 	background-repeat:no-repeat;
 	background-position:right bottom;
 }
@@ -7771,7 +7771,7 @@
     width: 60px;
     z-index: 1;
     height: 38px;
-    background: url(../images/icons/shape-3.html);
+    /* background: url(../images/icons/shape-3.html); */
     background-position: right top;
 }
 
@@ -7783,7 +7783,7 @@
 	width:60px;
 	height:38px;
 	z-index:1;
-	background:url(../images/icons/shape-4.html);
+	/* background:url(../images/icons/shape-4.html); */
 }
 
 .blog-detail_meta{
