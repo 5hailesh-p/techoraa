@@ -16,8 +16,10 @@ class Contact(models.Model):
 class SiteSettings(models.Model):
     site_name = models.CharField(max_length=100)
     logo = models.ImageField(upload_to='logos/' ,blank=True,null=True)
+    fav = models.ImageField(upload_to='fav/' ,blank=True,null=True)
     email = models.EmailField()
     phone = models.CharField(max_length=20)
+    address = models.TextField(blank=True,null=True)
 
     telegram = models.URLField(blank=True,null=True)
     instagram = models.URLField(blank=True,null=True)
