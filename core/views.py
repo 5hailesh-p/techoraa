@@ -56,7 +56,7 @@ def contact(request):
             to= [email],
         )
         msg.attach_alternative(html_msg,'text/html')
-        msg.send();
+        msg.send(fail_silently=False);
         print('send')
         # sub= 'this is test'
         # msg= 'this is message from ' + name + 'for enquiry'
