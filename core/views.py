@@ -50,10 +50,10 @@ def contact(request):
         plain_msg = strip_tags(html_msg)
 
         msg = EmailMultiAlternatives(
-            subject = sub,
+            subject = subject,
             body= plain_msg,
             from_email = from_emaill,
-            to= to_list,
+            to= [email],
         )
         msg.attach_alternative(html_msg,'text/html')
         msg.send();
