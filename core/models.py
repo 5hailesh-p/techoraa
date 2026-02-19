@@ -12,6 +12,15 @@ class Contact(models.Model):
 
     def __str__(self):
         return self.name
+    
+class Contact_form(models.Model):
+    name = models.CharField(max_length=100)
+    email = models.EmailField()
+    phone = models.CharField(max_length=20)
+    created_at = models.DateField()
+
+    def __str__(self):
+        return self.name
 
 class SiteSettings(models.Model):
     site_name = models.CharField(max_length=100)

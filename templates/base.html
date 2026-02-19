@@ -152,10 +152,10 @@
       </header>
       <!-- End Main Header -->
 
-{% comment %} {% if messages %}
+{% if messages %}
 <div class="toast-container position-fixed bottom-0 end-0 p-3">
   {% for message in messages %}
-    <div class="toast align-items-center show {% if message.tags %}text-bg-{{ message.tags }}{% endif %} " role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast align-items-center   {% if message.tags %}text-bg-{{ message.tags }}{% endif %} " role="alert" aria-live="assertive" aria-atomic="true" data-bs-delay="3000" data-bs-autohide="true">
         <div class="d-flex">
             <div class="toast-body">
             {{ message }}
@@ -165,7 +165,9 @@
     </div>
   {% endfor %}
 </div>
-{% endif %} {% endcomment %}
+{% endif %}
+
+
 {% block body %}
 
 {% endblock body %}
@@ -402,5 +404,31 @@
     {% comment %} <script src="{% static 'js/color-settings.js' %}"></script> {% endcomment %}
     <script src="{% static 'js/script.js' %}"></script>
  
+<script>
+ var xhtp = new XMLHttpRequest()
+ function acheck(){
+    xhtp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        console.log(this.responseText)
+      }
+    };
+   xhtp.open("GET","{% url 'contact_form' %}", true)
+   xhtp.send()
+ }
+
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const toastElements = document.querySelectorAll('.toast');
+    toastElements.forEach(function (toastEl) {
+        const toast = new bootstrap.Toast(toastEl, {
+            delay: 3000,
+            autohide: true
+        });
+        toast.show();
+    });
+});
+</script>
+
   </body>
 </html>
