@@ -42,9 +42,12 @@ ALLOWED_HOSTS = ['techoraa-6k38.onrender.com','127.0.0.1']
 
 INSTALLED_APPS = [
     'core.apps.CoreConfig',
-    'django.contrib.admin',
-    'django.contrib.auth',
-    'django.contrib.contenttypes',
+    # 'django.contrib.admin',
+    # 'django.contrib.auth',
+    # 'django.contrib.contenttypes',
+    "core.apps.MongoAdminConfig",
+    "core.apps.MongoAuthConfig",
+    "core.apps.MongoContentTypesConfig",
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
@@ -87,11 +90,30 @@ WSGI_APPLICATION = 'techoraa.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/6.0/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
+db = f"mongodb+srv://{config('MONGO_USER')}:{config('MONGO_PASS')}@tech.dh4xq33.mongodb.net/"
+
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
+    "default": {
+          "ENGINE": "django_mongodb_backend",
+          "HOST": db,
+          "NAME": "tech",
+    },
+}
+# Force all models (including Django built-ins) to use ObjectIdAutoField
+DEFAULT_AUTO_FIELD = "django_mongodb_backend.fields.ObjectIdAutoField"
+
+# Optional: avoid migrations conflicts for built-in apps
+MIGRATION_MODULES = {
+    'auth': None,
+    'contenttypes': None,
+    'sessions': None,
+    'admin': None,
 }
 
 

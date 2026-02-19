@@ -1,5 +1,5 @@
 from django.db import models
-
+from django.conf import settings
 # Create your models here.
 
 class Contact(models.Model):
@@ -10,6 +10,10 @@ class Contact(models.Model):
     message = models.TextField()
     created_at = models.DateField()
 
+    class Meta:
+        db_table = "contact"
+        managed = False
+
     def __str__(self):
         return self.name
     
@@ -18,6 +22,10 @@ class Contact_form(models.Model):
     email = models.EmailField()
     phone = models.CharField(max_length=20)
     created_at = models.DateField()
+
+    class Meta:
+        db_table = "contact_info"
+        managed = False
 
     def __str__(self):
         return self.name
@@ -33,6 +41,10 @@ class SiteSettings(models.Model):
     telegram = models.URLField(blank=True,null=True)
     instagram = models.URLField(blank=True,null=True)
     github = models.URLField(blank=True,null=True)
+
+    class Meta:
+        db_table = "site_settings"
+        managed = False
 
     def __str__(self):
         return self.site_name
