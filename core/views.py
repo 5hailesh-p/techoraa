@@ -42,6 +42,7 @@ def contact(request):
         contact.save()
         messages.success(request, "Your message has been sent successfully!")
 
+        mail_bhejo(subject,[email])
         # email 
 
         # sub= 'this is test' 
